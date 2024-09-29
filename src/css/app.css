@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+}
+
+/* Globales */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Header Y navegacion */
+
+.nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenedor-nevegacion{
+    border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    background-image: url('../images/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.categorias h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+    &:hover{
+        background-color: #037bc0;
+        color: #fff;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+
+/* Box Model */
+
